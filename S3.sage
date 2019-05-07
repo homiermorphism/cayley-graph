@@ -17,5 +17,6 @@ for s in S3:
     for t in T3:
         G.add_edges([(s,s*t)])
 print(order(G))
-print(G.show())
+H = G.graphplot(vertex_size = 400,graph_border = True,layout='circular')
+print(H.show())
 print(G.is_bipartite())
